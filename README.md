@@ -38,3 +38,8 @@ Next, navigate to the following:
 http://localhost:9090/
 http://localhost:3000/
 ```
+
+## Setup Prometheus Datasource
+
+After logging into Grafana, a datasource will need to be configured.  [Follow these 
+instructions to setup the datasource.](https://github.com/jasonodonnell/grafana-pgsql-monitoring)
