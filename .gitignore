@@ -32,8 +32,10 @@ Temporary Items
 .vagrant/
 
 ### SSH Keys ###
+services/pgbackrest/config/authorized_keys
 services/pgbackrest/config/backrest
 services/pgbackrest/config/backrest.pub
+services/postgres/config/authorized_keys
 services/postgres/config/postgres
 services/postgres/config/postgres.pub
 
