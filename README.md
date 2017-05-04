@@ -2,6 +2,7 @@
 
 This is the virtualization blueprint to deploy:
 * PostgreSQL
+* pgBackrest 
 * Prometheus
 * Grafana 
 
