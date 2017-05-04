@@ -26,17 +26,20 @@ mkdir ${PGSQL_DIR?}/.ssh
 
 cp ${PGSQL_SRC_DIR?}/config/pgbackrest.conf /etc/pgbackrest.conf
 cp ${PGSQL_SRC_DIR?}/config/authorized_keys ${PGSQL_DIR?}/.ssh
+cp ${PGSQL_SRC_DIR?}/config/config ${PGSQL_DIR?}/.ssh/config
 cp ${PGSQL_SRC_DIR?}/config/postgres ${PGSQL_DIR?}/.ssh
 cp ${PGSQL_SRC_DIR?}/config/postgresql.conf ${PGSQL_DIR?}/${PGSQL_VER?}/data
 cp ${PGSQL_SRC_DIR?}/config/pg_hba.conf ${PGSQL_DIR?}/${PGSQL_VER?}/data
 
 chown -R ${USER?}:${GROUP?} ${PGSQL_DIR?}
 chmod 700 ${PGSQL_DIR?}/.ssh
+chmod 600 ${PGSQL_DIR?}/.ssh/config
 chmod 600 ${PGSQL_DIR?}/.ssh/authorized_keys
 chmod 400 ${PGSQL_DIR?}/.ssh/postgres
 chmod 600 ${PGSQL_DIR?}/${PGSQL_VER?}/data/postgresql.conf
 chmod 600 ${PGSQL_DIR?}/${PGSQL_VER?}/data/pg_hba.conf
 restorecon ${PGSQL_DIR?}/.ssh
+restorecon ${PGSQL_DIR?}/.ssh/config
 restorecon ${PGSQL_DIR?}/.ssh/authorized_keys
 
 systemctl start postgresql-${PGSQL_VER?}
