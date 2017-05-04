@@ -11,6 +11,14 @@ require 'yaml'
 # Read YAML file with box details
 servers = YAML.load_file('servers.yaml')
 
+system("
+    if [[ #{ARGV[0]} = 'up' ]]
+    then
+        echo 'Running setup.sh..'
+        ./setup.sh
+    fi
+")
+
 # Create boxes
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     servers.each do |servers|

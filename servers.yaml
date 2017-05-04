@@ -5,15 +5,21 @@
   ip: 172.17.8.100
   job: postgres
   ram: 2048
+- name: pgbackrest 
+  box: centos/7
+  hostname: "orc-pgbackrest.dev"
+  ip: 172.17.8.101
+  job: pgbackrest
+  ram: 2048
 - name: prometheus
   box: centos/7
   hostname: "orc-prometheus.dev"
-  ip: 172.17.8.101
+  ip: 172.17.8.102
   job: prometheus
   ram: 2048
 - name: grafana 
   box: centos/7
   hostname: "orc-grafana.dev"
-  ip: 172.17.8.102
+  ip: 172.17.8.103
   job: grafana
   ram: 2048

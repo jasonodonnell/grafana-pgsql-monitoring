@@ -31,4 +31,10 @@ Temporary Items
 ### Vagrant ###
 .vagrant/
 
+### SSH Keys ###
+services/pgbackrest/config/backrest
+services/pgbackrest/config/backrest.pub
+services/postgres/config/postgres
+services/postgres/config/postgres.pub
+
 # End of https://www.gitignore.io/api/osx,vagrant
