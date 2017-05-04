@@ -2,5 +2,5 @@ Host 172.17.8.101
   IdentityFile ~/.ssh/postgres
   Port 22
   User backrest
-  Hostname 172.17.8.10`
+  Hostname 172.17.8.101
   StrictHostKeyChecking=no
