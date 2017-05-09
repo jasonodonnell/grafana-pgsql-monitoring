@@ -51,3 +51,8 @@ http://localhost:3000/
 
 After logging into Grafana, a datasource will need to be configured.  [Follow these 
 instructions to setup the datasource.](https://github.com/jasonodonnell/grafana-pgsql-monitoring)
+
+## Setup Dashboard
+
+A sample dashboard is located in `./services/grafana/config/dashboard.json`.  Copy this json 
+blob and import it as a new dashboard by clicking the Dashboard > Import on the top left menu.
