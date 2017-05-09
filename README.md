@@ -10,6 +10,13 @@ This is the virtualization blueprint to deploy:
 
 * Vagrant (tested on 1.8.6)
 * Virtual Box (tested on 5.1.6)
+* `vagrant-hostmanager`
+
+To install `vagrant-hostmanager` run the following:
+
+```bash
+$ vagrant plugin install vagrant-hostmanager
+```
 
 ## Deploy
 

@@ -1,6 +1,6 @@
-Host 172.17.8.101
+Host orc-pgbackrest.dev
   IdentityFile ~/.ssh/postgres
   Port 22
   User backrest
-  Hostname 172.17.8.101
+  Hostname orc-pgbackrest.dev
   StrictHostKeyChecking=no
