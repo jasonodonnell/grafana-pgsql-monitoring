@@ -10,7 +10,7 @@ ExecStartPre=/bin/chown -R prometheus:prometheus /var/lib/prometheus/postgres_ex
 User=prometheus
 ExecStart=/var/lib/prometheus/postgres_exporter/postgres_exporter \
      -extend.query-path=/var/lib/prometheus/postgres_exporter/queries.yml
-ExectStop=/usr/bin/kill -9 $(pidof postgres_exporter)
+ExecStop=/usr/bin/kill -9 $(pidof postgres_exporter)
 
 Restart=always
 [Install]

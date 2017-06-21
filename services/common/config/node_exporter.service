@@ -8,7 +8,7 @@ PermissionsStartOnly=true
 ExecStartPre=/bin/chown -R prometheus:prometheus /var/lib/prometheus/node_exporter
 User=prometheus
 ExecStart=/var/lib/prometheus/node_exporter/node_exporter
-ExectStop=/usr/bin/kill -9 $(pidof node_exporter)
+ExecStop=/usr/bin/kill -9 $(pidof node_exporter)
 
 Restart=always
 [Install]
